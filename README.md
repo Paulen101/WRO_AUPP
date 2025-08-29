@@ -64,13 +64,13 @@ We built our car around some pretty solid hardware and wrote custom software to 
 ### **The Hardware**
 - **Brain**: NVIDIA Jetson Orin Nano (this thing is powerful!)
 - **OS**: Ubuntu 22.04 with ROS2 Humble running the show
-- **Eyes**: RGB-D camera so it can see in 3D and recognize colors
-- **Sensors**: Ultrasonic sensors, IMU, and wheel encoders to know what's happening around it
-- **Movement**: Servo motors for steering and driving with precision
+- **Eyes**: Intel RealSense D455 camera for both color and depth perception
+- **Sensors**: IMU for orientation and movement tracking
+- **Movement**: Motors with built-in encoders for precise steering and driving
 
 ### **The Software**
 - **Framework**: ROS2 Humble - it's like the nervous system connecting everything
-- **Vision**: OpenCV with our own algorithms to spot those red and green pillars
+- **Vision**: YOLOv8 AI models (trained with YOLOv8s and YOLOv8n variants) for pillar detection, fine-tuned on our custom dataset with various lighting conditions, then exported to optimized .engine files for faster inference
 - **Control**: PID controllers that we spent way too much time tuning (but it was worth it!)
 - **Decision Making**: Smart algorithms that combine data from all sensors
 

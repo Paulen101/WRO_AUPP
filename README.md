@@ -63,7 +63,7 @@ We built our car around some pretty solid hardware and wrote custom software to 
 
 ### **The Hardware**
 - **Brain**: NVIDIA Jetson Orin Nano (this thing is powerful!)
-- **OS**: Ubuntu 20.04 with ROS2 Humble running the show
+- **OS**: Ubuntu 22.04 with ROS2 Humble running the show
 - **Eyes**: RGB-D camera so it can see in 3D and recognize colors
 - **Sensors**: Ultrasonic sensors, IMU, and wheel encoders to know what's happening around it
 - **Movement**: Servo motors for steering and driving with precision

@@ -25,13 +25,13 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <table width="100%">
 <tr>
 <td width="30%" valign="top" align="center">
-<h3><strong>Prof. SENG Theara </strong></h3>
+<h4><strong>Prof. SENG Theara </strong></h4>
 <img src="t-photos/profTheara.svg" width="300" style="display: block; margin: 10px auto;">
 </td>
 <td width="70%" valign="middle">
-<h3><strong>Role:</strong> Team Coach</h3>
-<h3><strong>Origin:</strong> Siem Reap, Cambodia</h3>
-<h3><strong>Bio:</strong> An innovative tech enthusiast and lecturer at the American University of Phnom Penh (AUPP) with a Master's degree in Robotics from France. He has experiences in microcontroller programming, sensor integration, and IoT systems. As our team coach, he provided expert guidance on robotics fundamentals, autonomous systems, and AI integration while mentoring us through complex technical challenges and project development. His passion for cutting-edge technologies and hands-on approach to teaching helped shape our understanding of advanced robotics and prepared us for the WRO competition.</h3>
+<h4><strong>Role:</strong> Team Coach</h4>
+<h4><strong>Origin:</strong> Siem Reap, Cambodia</h4>
+<h4><strong>Bio:</strong> An innovative tech enthusiast and lecturer at the American University of Phnom Penh (AUPP) with a Master's degree in Robotics from France. He has experiences in microcontroller programming, sensor integration, and IoT systems. As our team coach, he provided expert guidance on robotics fundamentals, autonomous systems, and AI integration while mentoring us through complex technical challenges and project development. His passion for cutting-edge technologies and hands-on approach to teaching helped shape our understanding of advanced robotics and prepared us for the WRO competition.</h3>
 </td>
 </tr>
 </table>
@@ -41,12 +41,12 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <table width="100%">
 <tr>
 <td width="70%" valign="middle">
-<h3><strong>Role:</strong> 3D Design & Software Developer</h3>
-<h3><strong>Origin:</strong> Battambang, Cambodia</h3>
-<h3><strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT). Specialized in 3D modeling and vehicle design using CAD software. Responsible for designing and optimizing the car's 3D components and mechanical structure. Also contributed to software development and played a key role in project planning and coordination. His academic background in ICT combined with 3D design expertise helped create the physical foundation of our autonomous vehicle.</h3>
+<h4><strong>Role:</strong> 3D Design & Software Developer</h4>
+<h4><strong>Origin:</strong> Battambang, Cambodia</h4>
+<h4><strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT). Specialized in 3D modeling and vehicle design using CAD software. Responsible for designing and optimizing the car's 3D components and mechanical structure. Also contributed to software development and played a key role in project planning and coordination. His academic background in ICT combined with 3D design expertise helped create the physical foundation of our autonomous vehicle.</h4>
 </td>
 <td width="30%" valign="top" align="center">
-<h3><strong>CHAMROEUN Vireakpanha</strong></h3>
+<h4><strong>CHAMROEUN Vireakpanha</strong></h4>
 <img src="t-photos/panha.svg" width="300" style="display: block; margin: 10px auto;">
 </td>
 </tr>
@@ -57,13 +57,13 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <table width="100%">
 <tr>
 <td width="30%" valign="top" align="center">
-<h3><strong>HENG BunKheang</strong></h3>
+<h3><strong>HENG BunKheang</strong></h4>
 <img src="t-photos/kheang.svg" width="300" style="display: block; margin: 10px auto;">
 </td>
 <td width="70%" valign="middle">
-<h3><strong>Role:</strong> Lead Software Developer</h3>
-<h3><strong>Origin:</strong> Phnom Penh, Cambodia</h3>
-<h3><strong>Bio:</strong> A sophomore at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT) with a focus on software engineering and robotics. Serves as the lead programmer and system architect for the autonomous vehicle project. Specialized in ROS2 development, sensor integration, and control systems. Responsible for the overall software architecture, PID controller implementation, and real-time decision-making algorithms. His comprehensive programming skills and system design experience ensure seamless integration between all components of our autonomous vehicle.</h3>
+<h3><strong>Role:</strong> Lead Software Developer</h4>
+<h3><strong>Origin:</strong> Phnom Penh, Cambodia</h4>
+<h4><strong>Bio:</strong> A sophomore at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT) with a focus on software engineering and robotics. Serves as the lead programmer and system architect for the autonomous vehicle project. Specialized in ROS2 development, sensor integration, and control systems. Responsible for the overall software architecture, PID controller implementation, and real-time decision-making algorithms. His comprehensive programming skills and system design experience ensure seamless integration between all components of our autonomous vehicle.</h4>
 </td>
 </tr>
 </table>
@@ -73,12 +73,12 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <table width="100%">
 <tr>
 <td width="70%" valign="middle">
-<h3><strong>Role:</strong> Hardware & Software Developer</h3>
-<h3><strong>Origin:</strong> Battambang, Cambodia</h3>
-<h3><strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) and Fort Hays State University (FHSU), majoring in Information Technology Management/Computer Science (ITM/CS). Specialized in mechanical and hardware work while also contributing to software development. Has been instrumental in car building from the early TurtleBot3 experiments to the final autonomous vehicle. Worked on both software and hardware integration throughout the project's evolution, providing crucial support in mechanical assembling, component integration, and system troubleshooting. His hands-on approach and versatility in both hardware and software made him a good contributor to the team's success.</h3> 
+<h4><strong>Role:</strong> Hardware & Software Developer</h4>
+<h4><strong>Origin:</strong> Battambang, Cambodia</h4>
+<h4><strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) and Fort Hays State University (FHSU), majoring in Information Technology Management/Computer Science (ITM/CS). Specialized in mechanical and hardware work while also contributing to software development. Has been instrumental in car building from the early TurtleBot3 experiments to the final autonomous vehicle. Worked on both software and hardware integration throughout the project's evolution, providing crucial support in mechanical assembling, component integration, and system troubleshooting. His hands-on approach and versatility in both hardware and software made him a good contributor to the team's success.</h4> 
 </td>
 <td width="30%" valign="top" align="center">
-<h3><strong>CHHUN Paulen</strong></h3>
+<h4><strong>CHHUN Paulen</strong></h4>
 <img src="t-photos/paulen.svg" width="300" style="display: block; margin: 10px auto;">
 </td>
 </tr>

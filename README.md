@@ -1,7 +1,7 @@
 # WRO Future Engineers 2025 - TeamBaymax Motion (AUPP)
 
 <div align="center">
-<img src="other/banner.svg" style="width: 100%; height: 650px; object-fit: cover; max-width: 100%;">
+<img src="other/banner.svg">
 </div>
 
 <div align="left" style="margin: 20px 0;">
@@ -21,27 +21,31 @@
 
 ## 📚 Table of Contents
 
-- [🎯 What We Built](#-what-we-built)
-- [👥 Meet Our Team](#-meet-our-team)
-- [📁 What's In Here](#-whats-in-here)
-- [🚀 How We Built It](#-how-we-built-it)
-  - [Choosing Our Hardware](#choosing-our-hardware)
-  - [Writing the Software](#writing-the-software)
-  - [Making Everything Work Together](#making-everything-work-together)
-- [🔧 What Our Car Can Do](#-what-our-car-can-do)
-  - [Driving Itself](#driving-itself)
-  - [Seeing and Understanding](#seeing-and-understanding)
-  - [Smart Control](#smart-control)
-- [🏁 How It Performs](#-how-it-performs)
-  - [The Numbers](#the-numbers)
-- [🛠️ Our Journey](#️-our-journey)
-  - [Starting Small](#starting-small)
-  - [Going Custom](#going-custom)
-  - [Learning the Hard Way](#learning-the-hard-way)
-  - [Making It Work](#making-it-work)
-- [🏆 What Makes It Special](#-what-makes-it-special)
-- [🚀 Want to Try It?](#-want-to-try-it)
-- [📜 License & Copyright](#-license--copyright)
+- [WRO Future Engineers 2025 - TeamBaymax Motion (AUPP)](#wro-future-engineers-2025---teambaymax-motion-aupp)
+  - [📚 Table of Contents](#-table-of-contents)
+  - [🎯 What We Built](#-what-we-built)
+  - [👥 Meet Our Team](#-meet-our-team)
+  - [📁 What's In Here](#-whats-in-here)
+    - [The Documentation](#the-documentation)
+    - [The Technical](#the-technical)
+  - [🚀 How We Built It](#-how-we-built-it)
+    - [**Choosing Our Hardware**](#choosing-our-hardware)
+    - [**Writing the Software**](#writing-the-software)
+    - [**Making Everything Work Together**](#making-everything-work-together)
+  - [🔧 What Our Car Can Do](#-what-our-car-can-do)
+    - [**Driving Itself**](#driving-itself)
+    - [**Seeing and Understanding**](#seeing-and-understanding)
+    - [**Smart Control**](#smart-control)
+  - [🏁 How It Performs](#-how-it-performs)
+    - [**The Numbers**](#the-numbers)
+  - [🛠️ Our Journey](#️-our-journey)
+    - [**Starting Small**](#starting-small)
+    - [**Going Custom**](#going-custom)
+    - [**Learning the Hard Way**](#learning-the-hard-way)
+    - [**Making It Work**](#making-it-work)
+  - [🏆 What Makes It Special](#-what-makes-it-special)
+  - [🚀 Want to Try It?](#-want-to-try-it)
+  - [📜 Copyright](#-copyright)
 
 ---
 

@@ -1,5 +1,47 @@
-# WRO Future Engineers 2025 - Our Autonomous Vehicle - Baymax Motion (AUPP)
-*Everything we built to make it work*
+# WRO Future Engineers 2025 - TeamBaymax Motion (AUPP)
+
+<div align="center">
+<img src="other/banner.svg" style="width: 100%; height: 650px; object-fit: cover; max-width: 100%;">
+</div>
+
+<div align="left" style="margin: 20px 0;">
+  <a href="https://www.instagram.com/teambaymaxmotion?utm_source=qr" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+  &nbsp;&nbsp;
+  <a href="https://www.youtube.com/channel/your_youtube_channel" target="_blank">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" />
+  </a>
+</div>
+
+---
+*"Apparently we needed to teach a car how to drive and follow traffic rules since humans keep forgetting." 🤷‍♂️🏎️💨*
+
+---
+
+## 📚 Table of Contents
+
+- [🎯 What We Built](#-what-we-built)
+- [👥 Meet Our Team](#-meet-our-team)
+- [📁 What's In Here](#-whats-in-here)
+- [🚀 How We Built It](#-how-we-built-it)
+  - [Choosing Our Hardware](#choosing-our-hardware)
+  - [Writing the Software](#writing-the-software)
+  - [Making Everything Work Together](#making-everything-work-together)
+- [🔧 What Our Car Can Do](#-what-our-car-can-do)
+  - [Driving Itself](#driving-itself)
+  - [Seeing and Understanding](#seeing-and-understanding)
+  - [Smart Control](#smart-control)
+- [🏁 How It Performs](#-how-it-performs)
+  - [The Numbers](#the-numbers)
+- [🛠️ Our Journey](#️-our-journey)
+  - [Starting Small](#starting-small)
+  - [Going Custom](#going-custom)
+  - [Learning the Hard Way](#learning-the-hard-way)
+  - [Making It Work](#making-it-work)
+- [🏆 What Makes It Special](#-what-makes-it-special)
+- [🚀 Want to Try It?](#-want-to-try-it)
+- [📜 License & Copyright](#-license--copyright)
 
 ---
 
@@ -31,6 +73,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <td width="70%" valign="middle">
 <h4><strong>Role:</strong> Team Coach</h4>
 <h4><strong>Origin:</strong> Siem Reap, Cambodia</h4>
+<h4><strong>Email:</strong> <a href="mailto:t.seng@aupp.edu.kh">t.seng@aupp.edu.kh</a></h4>
 <strong>Bio:</strong> An innovative tech enthusiast and lecturer at the American University of Phnom Penh (AUPP) with a Master's degree in Robotics from France. He has experiences in microcontroller programming, sensor integration, and IoT systems. As our team coach, he provided expert guidance on robotics fundamentals, autonomous systems, and AI integration while mentoring us through complex technical challenges and project development. His passion for cutting-edge technologies and hands-on approach to teaching helped shape our understanding of advanced robotics and prepared us for the WRO competition.
 </td>
 </tr>
@@ -43,6 +86,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <td width="70%" valign="middle">
 <h4><strong>Role:</strong> 3D Design & Software Developer</h4>
 <h4><strong>Origin:</strong> Battambang, Cambodia</h4>
+<h4><strong>Email:</strong> <a href="mailto:2024033chamroeun@aupp.edu.kh">2024033chamroeun@aupp.edu.kh</a></h4>
 <strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT). Specialized in 3D modeling and vehicle design using CAD software. Responsible for designing and optimizing the car's 3D components and mechanical structure. Also contributed to software development and played a key role in project planning and coordination. His academic background in ICT combined with 3D design expertise helped create the physical foundation of our autonomous vehicle.
 </td>
 <td width="30%" valign="top" align="center">
@@ -63,6 +107,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <td width="70%" valign="middle">
 <h4><strong>Role:</strong> Lead Software Developer</h4>
 <h4><strong>Origin:</strong> Phnom Penh, Cambodia</h4>
+<h4><strong>Email:</strong> <a href="mailto:2023302heng@aupp.edu.kh">2023302heng@aupp.edu.kh</a></h4>
 <strong>Bio:</strong> A sophomore at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT) with a focus on software engineering and robotics. Serves as the lead programmer and system architect for the autonomous vehicle project. Specialized in ROS2 development, sensor integration, and control systems. Responsible for the overall software architecture, PID controller implementation, and real-time decision-making algorithms. His comprehensive programming skills and system design experience ensure seamless integration between all components of our autonomous vehicle.
 </td>
 </tr>
@@ -75,6 +120,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <td width="70%" valign="middle">
 <h4><strong>Role:</strong> Hardware & Software Developer</h4>
 <h4><strong>Origin:</strong> Battambang, Cambodia</h4>
+<h4><strong>Email:</strong> <a href="mailto:2023225chhun@aupp.edu.kh">2023225chhun@aupp.edu.kh</a></h4>
 <strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) and Fort Hays State University (FHSU), majoring in Information Technology Management/Computer Science (ITM/CS). Specialized in mechanical and hardware work while also contributing to software development. Has been instrumental in car building from the early TurtleBot3 experiments to the final autonomous vehicle. Worked on both software and hardware integration throughout the project's evolution, providing crucial support in mechanical assembling, component integration, and system troubleshooting. His hands-on approach and versatility in both hardware and software made him a good contributor to the team's success.
 </td>
 <td width="30%" valign="top" align="center">
@@ -109,7 +155,7 @@ Building our autonomous vehicle was quite the journey - lots of trial and error,
 ### **Choosing Our Hardware**
 We had to be smart about every component since we're students on a budget (aka broke), but we also needed serious performance. Also these components are also selected by our coach as well because he knows everything.
 
-- **The Brain**: NVIDIA Jetson Orin Nano - This little computer is honestly incredible. It's got ARM64 architecture with AI acceleration that lets us run our machine learning models without breaking a sweat
+- **The Brain**: NVIDIA Jetson Orin Nano Super - This little computer is honestly incredible. It's got ARM64 architecture with AI acceleration that lets us run our machine learning models without breaking a sweat
 - **Operating System**: Ubuntu 22.04.5 LTS - We chose this because it's rock-solid stable, and we needed something that wouldn't crash during competitions
 - **The Eyes**: Intel RealSense D455 camera - This was a game-changer for us. It gives us both regular color vision and depth perception, so our car can actually "see" in 3D
 - **Balance and Navigation**: BNO055 IMU sensor that tells us exactly how our car is tilted, turning, or moving. Think of it as our car's inner ear
@@ -205,3 +251,19 @@ Everything you need to build and run our car is in this repository. We've docume
 ---
 
 *This represents months of hard work, learning, and problem-solving. We started with a simple goal - build a car that could drive itself - and ended up with something that genuinely impressed us. Hope it inspires you too!*
+
+---
+
+## 📜 Copyright
+
+
+**MIT License**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+**THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.**
+
+**© 2025 Team Baymax Motion**  
+*American University of Phnom Penh (AUPP), Cambodia*

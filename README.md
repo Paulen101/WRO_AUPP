@@ -57,12 +57,12 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <table width="100%">
 <tr>
 <td width="30%" valign="top" align="center">
-<h3><strong>HENG BunKheang</strong></h4>
+<h4><strong>HENG BunKheang</strong></h4>
 <img src="t-photos/kheang.svg" width="300" style="display: block; margin: 10px auto;">
 </td>
 <td width="70%" valign="middle">
-<h3><strong>Role:</strong> Lead Software Developer</h4>
-<h3><strong>Origin:</strong> Phnom Penh, Cambodia</h4>
+<h4><strong>Role:</strong> Lead Software Developer</h4>
+<h4><strong>Origin:</strong> Phnom Penh, Cambodia</h4>
 <h4><strong>Bio:</strong> A sophomore at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT) with a focus on software engineering and robotics. Serves as the lead programmer and system architect for the autonomous vehicle project. Specialized in ROS2 development, sensor integration, and control systems. Responsible for the overall software architecture, PID controller implementation, and real-time decision-making algorithms. His comprehensive programming skills and system design experience ensure seamless integration between all components of our autonomous vehicle.</h4>
 </td>
 </tr>

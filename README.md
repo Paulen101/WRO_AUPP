@@ -158,7 +158,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <h4><strong>Role:</strong> Lead Software Developer</h4>
 <h4><strong>Origin:</strong> Phnom Penh, Cambodia</h4>
 <h4><strong>Email:</strong> <a href="mailto:2023302heng@aupp.edu.kh">2023302heng@aupp.edu.kh</a></h4>
-<strong>Bio:</strong> A sophomore at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT) with a focus on software engineering and robotics. Serves as the lead programmer and system architect for the autonomous vehicle project. Specialized in ROS2 development, sensor integration, and control systems. Responsible for the overall software architecture, PID controller implementation, and real-time decision-making algorithms. His comprehensive programming skills and system design experience ensure seamless integration between all components of our autonomous vehicle.
+<strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) and Fort Hays State University (FHSU), majoring in Information Technology Management/Computer Science (ITM/CS) with a focus on software engineering and robotics. Serves as the lead programmer and system architect for the autonomous vehicle project. Specialized in ROS2 development, sensor integration, and control systems. Responsible for the overall software architecture, PID controller implementation, and real-time decision-making algorithms. His comprehensive programming skills and system design experience ensure seamless integration between all components of our autonomous vehicle.
 </td>
 </tr>
 </table>
@@ -171,7 +171,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <h4><strong>Role:</strong> Hardware & Software Developer</h4>
 <h4><strong>Origin:</strong> Battambang, Cambodia</h4>
 <h4><strong>Email:</strong> <a href="mailto:2023225chhun@aupp.edu.kh">2023225chhun@aupp.edu.kh</a></h4>
-<strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) and Fort Hays State University (FHSU), majoring in Information Technology Management/Computer Science (ITM/CS). Specialized in mechanical and hardware work while also contributing to software development. Has been instrumental in car building from the early TurtleBot3 experiments to the final autonomous vehicle. Worked on both software and hardware integration throughout the project's evolution, providing crucial support in mechanical assembling, component integration, and system troubleshooting. His hands-on approach and versatility in both hardware and software made him a good contributor to the team's success.
+<strong>Bio:</strong> A junior at the American University of Phnom Penh (AUPP) and Fort Hays State University (FHSU), majoring in Information Technology Management/Computer Science (ITM/CS). Specialized in mechanical and hardware work while also contributing to software development. Has been instrumental in car building from the early TurtleBot3 experiments to the final autonomous vehicle. Worked on both software and hardware integration throughout the project's evolution, providing crucial support in mechanical assembling, component integration, and system troubleshooting.
 </td>
 <td width="30%" valign="top" align="center">
 <h4><strong>CHHUN Paulen</strong></h4>
@@ -231,20 +231,16 @@ The real challenge wasn't building individual parts - it was getting them to pla
 ## 🔧 What Our Car Can Do
 
 ### **Driving Itself**
-- Follows walls to navigate the track smoothly
-- Uses an AI model to keep track of obstacles and avoid them
-- Uses sensors and algorithms to stay in bounds
-- Adjusts speed based on what's ahead
+
+Think of our car as having learned to drive just like a human would, but maybe even better. It naturally follows the walls to find its way around the track, almost like running your hand along a hallway in the dark. While it's doing this, it's constantly watching out for those red and green pillars, spotting them from a distance and smoothly steering around them without breaking a sweat. The car has this incredible sense of where it belongs on the track - it just knows not to wander off course. What really impresses us is how it reads the situation ahead and decides whether to speed up through open areas or slow down when things get tricky, kind of like how you'd naturally adjust your pace when walking through a crowded room versus an empty hallway.
 
 ### **Seeing and Understanding**
-- **Pillar Detection**: Spots red and green pillars even when lighting changes
-- **Depth Vision**: Knows exactly how far away things are
-- **AI-Powered Tracking**: Uses machine learning to monitor and predict obstacle movements
+
+Our car's vision is honestly pretty amazing - it's like giving it a pair of really smart eyes that never get tired. It can spot those red and green pillars from way across the room, even when the lighting is being weird or there are shadows everywhere. But it's not just seeing them - it actually understands how far away everything is, kind of like having built-in depth perception that's probably better than ours. The coolest part is how it uses machine learning to not just see what's there right now, but to predict where things might move next, almost like it's thinking ahead about what the obstacles might do.
 
 ### **Smart Control**
-- **Steering**: PID controllers we fine-tuned until they were perfect
-- **Speed**: Knows when to go fast and when to slow down
-- **Safety**: Emergency stops when something unexpected happens
+
+The way our car controls itself feels almost human-like, but probably more precise than most of us could ever be. We spent ages fine-tuning these PID controllers until they were just right - now the steering is so smooth it's like the car just naturally knows where to go. It has this intuitive sense of when to floor it on the straightaways and when to ease up before a tricky turn, kind of like an experienced driver who's driven the same route a thousand times. And just like any good driver, it always has its finger on the brake - if something unexpected pops up, it can stop on a dime to keep everyone safe.
 
 ---
 
@@ -257,10 +253,7 @@ Right now, our car can handle:
    - *Note: We're still working on the parking part - it's integrated but not quite there yet*
 
 ### **The Numbers**
-- **Speed**: Fast enough to be competitive, smart enough to stay safe (but still hit the wall during test)
-- **Vision Range**: Can see obstacles and pillars from a good distance
-- **Response Time**: Reacts in real-time (under 100ms)
-- **Accuracy**: Rarely misses a pillar, even in tricky lighting
+When it comes to speed, our car has found that sweet spot where it's fast enough to actually compete but smart enough not to be reckless - though we'll be honest, it still occasionally kisses the wall during testing (we're working on that!). The vision system can spot obstacles and pillars from impressively far away, giving it plenty of time to plan its moves. What really blows our minds is how quick it thinks - we're talking reaction times under 100 milliseconds, which is faster than most humans can even blink. And here's something we're genuinely proud of: it almost never misses spotting a pillar, even when the lighting conditions are being absolutely terrible and would probably fool us.
 
 ---
 
@@ -273,16 +266,10 @@ We began with simpler setups - a Raspbot with omniwheels and a TurtleBot3 - just
 Once we felt confident, we decided to build everything from scratch using the Jetson Orin Nano. This is where things got real.
 
 ### **Learning the Hard Way**
-- Had to learn ROS2 and Linux from zero (lots of late nights!)
-- Spent countless hours debugging camera issues and motor control
-- Rebuilt our chassis more times than we care to admit
-- But every problem taught us something new
+We had to start from scratch with ROS2 and Linux, which meant plenty of late nights figuring out how everything worked. Debugging camera issues and getting the motor control just right took more time than we expected, and we definitely went through a few chassis designs before landing on one that actually worked well. But honestly, every challenge we hit taught us something valuable, and looking back, those problem-solving sessions were where we learned the most.
 
 ### **Making It Work**
-- Fine-tuned our PID controllers until the car drove like a dream
-- Got our vision system to reliably spot pillars in all kinds of lighting
-- Integrated all our sensors so they work together seamlessly
-- Built something we're genuinely proud of
+Getting our PID controllers dialed in took patience, but once we found the right settings, the car's driving became really smooth and predictable. We put a lot of effort into making our vision system reliable across different lighting conditions, and it was satisfying to see it consistently spot those pillars. The real achievement was getting all our sensors to work together seamlessly - when everything finally clicked into place, we knew we had built something solid that we could be proud of.
 
 ---
 

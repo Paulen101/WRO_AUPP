@@ -112,7 +112,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <h4><strong>Role:</strong> Lead Software Developer</h4>
 <h4><strong>Origin:</strong> Phnom Penh, Cambodia</h4>
 <h4><strong>Email:</strong> <a href="mailto:2023302heng@aupp.edu.kh">2023302heng@aupp.edu.kh</a></h4>
-<strong>Bio:</strong> A sophomore at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT) with a focus on software engineering and robotics. Serves as the lead programmer and system architect for the autonomous vehicle project. Specialized in ROS2 development, sensor integration, and control systems. Responsible for the overall software architecture, PID controller implementation, and real-time decision-making algorithms. His comprehensive programming skills and system design experience ensure seamless integration between all components of our autonomous vehicle.
+<strong>Bio:</strong> A Junior at the American University of Phnom Penh (AUPP) majoring in Information and Communication Technology (ICT) with a focus on software engineering and robotics. Serves as the lead programmer and system architect for the autonomous vehicle project. Specialized in ROS2 development, sensor integration, and control systems. Responsible for the overall software architecture, PID controller implementation, and real-time decision-making algorithms. His comprehensive programming skills and system design experience ensure seamless integration between all components of our autonomous vehicle.
 </td>
 </tr>
 </table>

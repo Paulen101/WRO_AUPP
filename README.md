@@ -47,7 +47,7 @@
 </style>
 
 <div align="center">
-<img src="other/banner.svg">
+<img src="other/banner.svg" style="max-width: 100%; height: auto;">
 </div>
 
 <div align="left" style="margin: 20px 0;">
@@ -118,7 +118,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <tr>
 <td width="30%" valign="top" align="center">
 <h4><strong>Prof. SENG Theara </strong></h4>
-<img src="t-photos/profTheara.svg" width="300" style="display: block; margin: 10px auto;">
+<img src="t-photos/profTheara.svg" width="300" style="display: block; margin: 10px auto; max-width: 100%; height: auto;">
 </td>
 <td width="70%" valign="middle">
 <h4><strong>Role:</strong> Team Coach</h4>
@@ -141,7 +141,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 </td>
 <td width="30%" valign="top" align="center">
 <h4><strong>CHAMROEUN Vireakpanha</strong></h4>
-<img src="t-photos/panha.svg" width="300" style="display: block; margin: 10px auto;">
+<img src="t-photos/panha.svg" width="300" style="display: block; margin: 10px auto; max-width: 100%; height: auto;">
 </td>
 </tr>
 </table>
@@ -152,7 +152,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <tr>
 <td width="30%" valign="top" align="center">
 <h4><strong>HENG BunKheang</strong></h4>
-<img src="t-photos/kheang.svg" width="300" style="display: block; margin: 10px auto;">
+<img src="t-photos/kheang.svg" width="300" style="display: block; margin: 10px auto; max-width: 100%; height: auto;">
 </td>
 <td width="70%" valign="middle">
 <h4><strong>Role:</strong> Lead Software Developer</h4>
@@ -175,7 +175,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 </td>
 <td width="30%" valign="top" align="center">
 <h4><strong>CHHUN Paulen</strong></h4>
-<img src="t-photos/paulen.svg" width="300" style="display: block; margin: 10px auto;">
+<img src="t-photos/paulen.svg" width="300" style="display: block; margin: 10px auto; max-width: 100%; height: auto;">
 </td>
 </tr>
 </table>

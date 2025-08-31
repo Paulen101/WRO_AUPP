@@ -1,5 +1,51 @@
 # WRO Future Engineers 2025 - TeamBaymax Motion (AUPP)
 
+<style>
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+  table, tr, td {
+    display: block !important;
+    width: 100% !important;
+  }
+  
+  td[width="30%"], td[width="70%"] {
+    width: 100% !important;
+    text-align: center !important;
+    padding: 10px !important;
+  }
+  
+  /* Ensure name/photo always appears before bio on mobile */
+  td[width="30%"] {
+    order: -1 !important;
+  }
+  
+  tr {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+  
+  h4 {
+    font-size: 16px !important;
+    margin: 5px 0 !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  img[width="300"] {
+    width: 200px !important;
+  }
+  
+  img[width="1000"] {
+    width: 100% !important;
+  }
+}
+</style>
+
 <div align="center">
 <img src="other/banner.svg">
 </div>

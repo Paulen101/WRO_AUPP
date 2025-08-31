@@ -1,53 +1,7 @@
 # WRO Future Engineers 2025 - TeamBaymax Motion (AUPP)
 
-<style>
-/* Mobile responsive styles */
-@media screen and (max-width: 768px) {
-  table, tr, td {
-    display: block !important;
-    width: 100% !important;
-  }
-  
-  td[width="30%"], td[width="70%"] {
-    width: 100% !important;
-    text-align: center !important;
-    padding: 10px !important;
-  }
-  
-  /* Ensure name/photo always appears before bio on mobile */
-  td[width="30%"] {
-    order: -1 !important;
-  }
-  
-  tr {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-  
-  img {
-    max-width: 100% !important;
-    height: auto !important;
-  }
-  
-  h4 {
-    font-size: 16px !important;
-    margin: 5px 0 !important;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  img[width="300"] {
-    width: 200px !important;
-  }
-  
-  img[width="1000"] {
-    width: 100% !important;
-  }
-}
-</style>
-
 <div align="center">
-<img src="other/banner.svg" style="max-width: 100%; height: auto;">
+<img src="other/banner.svg" width="800">
 </div>
 
 <div align="left" style="margin: 20px 0;">
@@ -108,7 +62,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 ## 👥 Meet Our Team
 
 <div align="center">
-<img src="t-photos/team-photo-ft-coach.jpeg" width="1000" style="max-width: 100%; height: auto;">
+<img src="t-photos/team-photo-ft-coach.jpeg" width="700">
 <p><em>Team Photo - From left to right: Paulen, Bunkheang, Panha, and Prof. Theara (Coach)</em></p>
 </div>
 
@@ -118,7 +72,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <tr>
 <td width="30%" valign="top" align="center">
 <h4><strong>Prof. SENG Theara </strong></h4>
-<img src="t-photos/profTheara.svg" width="300" style="display: block; margin: 10px auto; max-width: 100%; height: auto;">
+<img src="t-photos/profTheara.svg" width="250">
 </td>
 <td width="70%" valign="middle">
 <h4><strong>Role:</strong> Team Coach</h4>
@@ -141,7 +95,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 </td>
 <td width="30%" valign="top" align="center">
 <h4><strong>CHAMROEUN Vireakpanha</strong></h4>
-<img src="t-photos/panha.svg" width="300" style="display: block; margin: 10px auto; max-width: 100%; height: auto;">
+<img src="t-photos/panha.svg" width="250">
 </td>
 </tr>
 </table>
@@ -152,7 +106,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 <tr>
 <td width="30%" valign="top" align="center">
 <h4><strong>HENG BunKheang</strong></h4>
-<img src="t-photos/kheang.svg" width="300" style="display: block; margin: 10px auto; max-width: 100%; height: auto;">
+<img src="t-photos/kheang.svg" width="250">
 </td>
 <td width="70%" valign="middle">
 <h4><strong>Role:</strong> Lead Software Developer</h4>
@@ -175,7 +129,7 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 </td>
 <td width="30%" valign="top" align="center">
 <h4><strong>CHHUN Paulen</strong></h4>
-<img src="t-photos/paulen.svg" width="300" style="display: block; margin: 10px auto; max-width: 100%; height: auto;">
+<img src="t-photos/paulen.svg" width="250">
 </td>
 </tr>
 </table>

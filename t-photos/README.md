@@ -11,4 +11,4 @@ Plus individual team member photos (paulen.svg, panha.svg, kheang.svg, profThear
 
 ---
 
-*[Additional team photos can be added here]*
+*[Additional team photos will be added here]*

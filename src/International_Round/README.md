@@ -30,7 +30,7 @@ The **International Round Open Challenge** code represents our most advanced and
 
 Our solution uses a ROS2-based architecture on an NVIDIA Jetson platform, receiving data from a RealSense depth camera and an IMU sensor, and controlling the robot via a CAN bus. The main algorithm uses **centered wall following**: it attempts to keep the robot equidistant between the left and right walls, rather than merely tracking one side, for smoother navigation and better performance at higher speeds and through complex corners.
 
-![Algorithm Diagram](../../algorithms_diagram/openChallengeDiagram.svg)
+![Algorithm Diagram](../algorithms_diagram/openChallengeDiagram.svg)
 
 ---
 
@@ -171,7 +171,7 @@ Both implementations utilize the same advanced vision system:
 
 This implementation is optimized for clockwise navigation around the track, where the robot follows the right wall and encounters pillars while moving in a clockwise direction.
 
-![Clockwise Obstacle Challenge Algorithm](../../algorithms_diagram/cwise.svg)
+![Clockwise Obstacle Challenge Algorithm](../algorithms_diagram/cwise.svg)
 
 #### Priority-Based State Machine
 
@@ -235,7 +235,7 @@ The clockwise implementation operates on a **5-level priority hierarchy**:
 
 This implementation is optimized for counter-clockwise navigation, featuring an advanced multi-priority control system with pillar tracking, progressive wall safety, and intelligent corner detection. The robot follows the right wall while navigating counter-clockwise, with specialized strategies for each obstacle type.
 
-![Counter-Clockwise Algorithm Diagram](../../algorithms_diagram/counterclock.png)
+![Counter-Clockwise Algorithm Diagram](../algorithms_diagram/counterclock.png)
 
 ---
 

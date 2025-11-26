@@ -48,164 +48,29 @@ Power Supply Hierarchy:
 
 ### Overview
 
-Our coach help designed and manufactured a custom PCB (Printed Circuit Board) to serve as the central control system for our robot. This board integrates motor control, CAN bus communication, power distribution, and sensor interfaces into a single, compact solution.
+Our coach help guide us designed and manufactured a custom PCB (Printed Circuit Board) to serve as the central control system for our robot. This board integrates motor control, CAN bus communication, power distribution, and sensor interfaces into a single, compact solution.
 
 ### Board Images
 
-**Image 1(Board.jpeg) : Top Layer (Component Side)**
+**3D(Board.jpeg) : Top Layer (Component Side)**
 ![3D_Board](./Board_3D.jpeg)
 - Green PCB with clearly labeled sections
 - White silkscreen labels for easy identification
 - Organized layout with dedicated functional zones
 
-**Image 2: Bottom Layer (Copper Traces)** - Reveals the internal wiring and circuit routing
+**Copper Traces: Bottom Layer** - Reveals the internal wiring and circuit routing
 ![Board](./Board.jpeg)
 - Red copper traces show signal and power routing
 - Professional PCB design with proper trace spacing
 - Ground planes visible for noise reduction
 
-**Image 3: Schematic Diagram** - Complete electrical design documentation
+**Schematic Diagram** - Complete electrical design documentation
 ![Schematic](./Schematic.jpeg)
 - Full circuit schematic showing all connections
 - Component values and part numbers specified
 - Functional blocks clearly defined
 
----
 
-### Board Architecture & Key Sections
-
-#### 1. **Microcontroller Section**
-- **MCU**: STM32F103C8Tx (top-left section)
-- **Function**: Main processing unit for motor control and CAN communication
-- **Features**: 
-  - 72MHz ARM Cortex-M3 processor
-  - Hardware CAN bus controller
-  - Multiple PWM outputs for motor control
-  - GPIO pins for sensor interfaces
-
-#### 2. **CAN Bus Interface** (Top-right section labeled "CANBUS")
-- **Transceiver**: TJA1050 CAN transceiver chip
-- **Connectors**: 
-  - CANH and CANL terminals for differential signaling
-  - 120Ω termination resistor visible in schematic
-- **Purpose**: Reliable communication between Jetson Orin Nano and motor controller
-- **Data Rate**: Supports up to 1 Mbps for real-time control
-
-#### 3. **Motor Driver Section** (Bottom-right)
-- **Motor Connectors**: 
-  - Motor1 header (6-pin) - Drive motor connection
-  - Motor2 header (6-pin) - Servo/second motor connection
-- **Driver Chips**: TB6612FNG dual motor driver (visible in schematic)
-- **Power Handling**: 
-  - Supports up to 12V input
-  - 1.2A continuous per channel (3.2A peak)
-- **Features**:
-  - Bidirectional motor control (forward/reverse)
-  - PWM speed control
-  - Built-in protection (over-current, thermal shutdown)
-
-#### 4. **Power Management** (Left side labeled "POWER")
-- **Input**: 12V from main battery via barrel jack or screw terminals
-- **Voltage Regulators**: 
-  - 5V regulator for logic circuits (AMS1117-5.0)
-  - 3.3V regulator for MCU and sensors (AMS1117-3.3)
-- **Power Distribution**:
-  - Separate power planes for motors and logic
-  - Decoupling capacitors (C1-C7) for stable power
-  - Yellow LEDs indicate power status
-
-#### 5. **Debugging & Programming Interface** (Top-left)
-- **Debugger Port**: 4-pin SWD (Serial Wire Debug) connector
-  - Allows firmware programming via ST-Link
-  - Real-time debugging capability
-- **Purpose**: Development and troubleshooting during testing
-
-#### 6. **GPIO & Peripheral Connections** (Left side)
-- **UART Port**: For serial communication with Jetson
-- **PB8-PB15 Pins**: General-purpose I/O for sensors
-- **PCL1_LED**: Status LED output
-- **Servo POWER**: Dedicated servo power output
-
-#### 7. **Boot & Reset Circuit** (Top-center in schematic)
-- **Boot Selection**: Jumper-configurable boot mode
-  - Boot from flash memory (normal operation)
-  - Boot from bootloader (firmware update)
-- **Reset Button**: Manual reset capability
-- **Status LEDs**: 
-  - D1 (LED) - Power indicator
-  - D5 (1k resistor) - Activity indicator
-
-#### 8. **Oscillator Circuit** (Center in schematic)
-- **Crystal**: 8MHz external crystal (Crystal_GND24)
-- **Purpose**: Provides stable clock signal for MCU
-- **Capacitors**: C2 and C8 for crystal stabilization
-
----
-
-### Circuit Design Highlights
-
-#### Power Distribution Network
-```
-12V Battery Input
-    ↓
-[LM2596-5 Buck Converter] → 5V Rail
-    ↓                           ↓
-[AMS1117-3.3]            Motor Drivers
-    ↓                      (up to 1.2A each)
-3.3V Rail
-    ↓
-STM32 MCU + Peripherals
-```
-
-#### Signal Flow
-```
-Jetson Orin Nano
-    ↓ (via CAN bus)
-TJA1050 Transceiver
-    ↓
-STM32F103 MCU
-    ↓ (PWM signals)
-TB6612FNG Motor Drivers
-    ↓
-DC Motors (Drive + Servo)
-```
-
----
-
-### Technical Specifications
-
-| Parameter | Specification |
-|-----------|--------------|
-| **Board Dimensions** | ~80mm × 80mm (approx.) |
-| **PCB Layers** | 2-layer FR4 |
-| **Input Voltage** | 12V DC (9-16V range) |
-| **Logic Voltage** | 3.3V (MCU), 5V (peripherals) |
-| **Motor Channels** | 2 independent channels |
-| **Motor Current** | 1.2A continuous, 3.2A peak per channel |
-| **CAN Bus Speed** | Up to 1 Mbps |
-| **MCU Clock** | 72 MHz (ARM Cortex-M3) |
-| **Programming Interface** | SWD (Serial Wire Debug) |
-
----
-
-### Key Design Features
-
-1. **Compact Integration**: All motor control, power, and communication in one board
-2. **Professional Layout**: Organized functional sections with clear labeling
-3. **Proper Grounding**: Ground planes reduce electrical noise
-4. **Protection Circuits**: Over-current and thermal protection for motors
-5. **Debugging Support**: Built-in programmer/debugger interface
-6. **Flexible Configuration**: Boot jumpers and GPIO breakouts for customization
-7. **Visual Feedback**: Status LEDs for power and activity monitoring
-
----
-
-### Manufacturing & Assembly
-
-- **PCB Fabrication**: Professionally manufactured (likely JLCPCB or similar)
-- **Assembly Method**: Hand-soldered surface-mount and through-hole components
-- **Quality**: Clean solder joints, proper component placement
-- **Testing**: Functional testing performed before vehicle integration
 
 ---
 
@@ -220,10 +85,8 @@ This custom board serves as the **motor control interface** between:
 
 ### Board Files Available
 
-- **Schematic**: Complete circuit diagram (shown in Image 3)
-- **PCB Layout**: Top and bottom copper layers (Images 1 & 2)
-- **Bill of Materials (BOM)**: Component list with part numbers
-- **Gerber Files**: Manufacturing files for PCB production
+- **Schematic**: Complete circuit diagram (shown in [Schematic](./Schematic.jpeg))
+- **PCB Layout**: Top and bottom copper layers ([3D](./Board_3D.jpeg) & [Copper](./Board.jpeg))
 
 *For complete technical details, refer to the schematic diagram and PCB layout files in this directory.*
 

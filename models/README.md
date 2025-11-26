@@ -6,18 +6,23 @@
 
 1. [Quick Use Guide](#quick-use-guide)
 2. [Design Timeline](#design-timeline)
-3. [Phase 1: Open Challenge](#phase-1-open-challenge)
-4. [Phase 2: Obstacle Challenge](#phase-2-obstacle-challenge)
-5. [Phase 3: Chassis Modification](#phase-3-chassis-modification)
-6. [Component Details](#component-details)
-7. [License](#license)
-8. [Contributing](#contributing)
+3. [International Round](#)
+   1. [Phase 1: Minor Improvement from the National](#)
+   2. [Phase 2: Lidar Mounting](#)
+   3. [Phase 3: New Camera Mounting](#)
+4. [National Round](#)
+   1. [Phase 1: Open Challenge](#phase-1-open-challenge)
+   2. [Phase 2: Obstacle Challenge](#phase-2-obstacle-challenge)
+   3. [Phase 3: Chassis Modification](#phase-3-chassis-modification)
+5. [Component Details](#component-details)
+6. [License](#license)
+7. [Contributing](#contributing)
 
 ---
 
 ## Quick Use Guide
 
-All 3D models in this repository are provided in two formats for maximum compatibility:
+All 3D models in this repository are provided in three formats for maximum compatibility:
 
 ### File Format Usage
 
@@ -36,26 +41,35 @@ All 3D models in this repository are provided in two formats for maximum compati
 ### Print Settings Recommendations
 - **Layer Height**: 0.2mm (standard quality)
 - **Infill**: 20-30% for structural components
-- **Support**: Required for overhangs >45°
-- **Material**: PLA for prototyping, PETG/ABS for final parts
+- **Support**: Required for overhangs >60°
+- **Material**: We mainly use PLA
 
 ---
 
 ## Design Timeline
 
+### National Round
+
 | Date | Phase | Version Tag | Component | Key Changes/Reason | Files |
 |------|-------|-------------|-----------|-------------------|-------|
-| 2024-Q1 | Phase 1 | P1V1 | Jetson Enclosure | Initial design for open challenge | [STEP](./Jetson_Enclosure(v1).step) \| [STL](./Jetson_Enclosure(v1).stl) |
-| 2024-Q1 | Phase 1 | P1V1 | RealSense Stand | Basic camera mounting solution | [STEP](./Intel_RealSense_Stand(v1).step) \| [STL](./Intel_RealSense_Stand(v1).stl) |
-| 2024-Q2 | Phase 1 | P1V2 | Jetson Enclosure | Improved ventilation and cable management | [STEP](./Jetson_Enclosure(v2).step) \| [STL](./Jetson_Enclosure(v2).stl) |
-| 2024-Q2 | Phase 1 | P1V2 | RealSense Stand | Height adjustment: +2cm for better FOV | [STEP](./Intel_RealSense_Stand_2_cm(v2).step) \| [STL](./Intel_RealSense_Stand_2_cm(v2).stl) |
-| 2024-Q3 | Phase 1 | P1V3 | RealSense Stand | Fine-tuned height: +2.5cm optimal positioning | [STEP](./Intel_RealSense_Stand_2_half_cm(v3).step) \| [STL](./Intel_RealSense_Stand_2_half_cm(v3).stl) |
-| TBD | Phase 2 | P2V1 | RealSense Mount | Battery bay integration for obstacle challenge | *In Development* |
-| TBD | Phase 3 | P3V1 | Jetson Enclosure | Battery bay integration for extended runtime | *Planned* |
-| TBD | Phase 3 | P3V4 | RealSense Stand | Enhanced mounting for final competition setup | *Planned* |
-| TBD | Phase 3 | P3V1 | Reinforcement Bracket | Structural improvements for reliability | *Planned* |
-| TBD | Phase 3 | P3V1 | Motor Mount | Optimized motor positioning and security | *Planned* |
+| 2025-Aug | Phase 1 | P1V1 | Jetson Enclosure | Initial design for open challenge | [STEP](./Jetson_Enclosure(v1).step) \| [STL](./Jetson_Enclosure(v1).stl) |
+| 2025-Aug | Phase 1 | P1V2 | RealSense Stand | Basic camera mounting solution | [STEP](./Intel_RealSense_Stand(v1).step) \| [STL](./Intel_RealSense_Stand(v1).stl) |
+| 2025-Aug | Phase 2 | P2V1 | Jetson Enclosure | Improved ventilation and cable management | [STEP](./Jetson_Enclosure(v2).step) \| [STL](./Jetson_Enclosure(v2).stl) |
+| 2025-Aug | Phase 2 | P2V2 | RealSense Stand | Height adjustment: +2cm for better FOV | [STEP](./Intel_RealSense_Stand_2_cm(v2).step) \| [STL](./Intel_RealSense_Stand_2_cm(v2).stl) |
+| 2025-Aug | Phase 3 | P3V1 | RealSense Stand | Fine-tuned height: +2.5cm optimal positioning | [STEP](./Intel_RealSense_Stand_2_half_cm(v3).step) \| [STL](./Intel_RealSense_Stand_2_half_cm(v3).stl) |
 
+### International Round
+| Date | Phase | Version Tag | Component | Key Changes/Reason | Files |
+|------|-------|-------------|-----------|-------------------|-------|
+| 2025- | Phase 1 | P1V1 | Jetson Enclosure | Initial design for open challenge | [STEP](./Jetson_Enclosure(v1).step) \| [STL](./Jetson_Enclosure(v1).stl) |
+| 2025-Aug | Phase 1 | P1V1 | RealSense Stand | Basic camera mounting solution | [STEP](./Intel_RealSense_Stand(v1).step) \| [STL](./Intel_RealSense_Stand(v1).stl) |
+| 2025-Aug | Phase 1 | P1V2 | Jetson Enclosure | Improved ventilation and cable management | [STEP](./Jetson_Enclosure(v2).step) \| [STL](./Jetson_Enclosure(v2).stl) |
+| 2025-Aug | Phase 1 | P1V2 | RealSense Stand | Height adjustment: +2cm for better FOV | [STEP](./Intel_RealSense_Stand_2_cm(v2).step) \| [STL](./Intel_RealSense_Stand_2_cm(v2).stl) |
+| 2025-Aug | Phase 1 | P1V3 | RealSense Stand | Fine-tuned height: +2.5cm optimal positioning | [STEP](./Intel_RealSense_Stand_2_half_cm(v3).step) \| [STL](./Intel_RealSense_Stand_2_half_cm(v3).stl) |
+| 2025-Aug | Phase 2 | P2V1 | RealSense Mount | Battery bay integration for obstacle challenge | *In Development* |
+| 2025-Aug | Phase 3 | P3V1 | Jetson Enclosure | Battery bay integration for extended runtime | *Planned* |
+| 2025-Aug | Phase 3 | P3V4 | RealSense Stand | Enhanced mounting for final competition setup | *Planned* |
+| TBD | Phase 3 | P3V1 | Reinforcement Bracket | Structural improvements for reliability | *Planned* |
 ---
 
 ## Phase 1: Open Challenge

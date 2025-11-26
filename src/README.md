@@ -72,7 +72,7 @@ Our computer vision pipeline starts by grabbing aligned depth and color frames, 
                   ▼
          ┌────────────────────┐
          │  Lap Count = 0     │
-         │  Yaw = 0°          │
+         │  Yaw = 0°/360      │
          └────────┬───────────┘
                   │
      ┌────────────▼────────────┐

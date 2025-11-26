@@ -18,10 +18,21 @@
 *"Apparently we needed to teach a car how to drive and follow traffic rules since humans keep forgetting." 🤷‍♂️🏎️💨*
 
 ---
-
+## Submain Link:
+### [Mobility Management](./schemes/README.md)
+### [Hardware & Design](./models/README.md)
+### [Software](./src/README.md)
+### [Robot Photos](./v-photos/README.md)
+### [Team Photo](./t-photos/README.md)
 ## 📚 Table of Contents
 
 - [WRO Future Engineers 2025 - TeamBaymax Motion (AUPP)](#wro-future-engineers-2025---teambaymax-motion-aupp)
+  - [Submain Link:](#submain-link)
+    - [Mobility Management](#mobility-management)
+    - [Hardware \& Design](#hardware--design)
+    - [Software](#software)
+    - [Robot Photos](#robot-photos)
+    - [Team Photo](#team-photo)
   - [📚 Table of Contents](#-table-of-contents)
   - [🎯 What We Built](#-what-we-built)
   - [👥 Meet Our Team](#-meet-our-team)
@@ -137,150 +148,6 @@ Our car drives itself from start to finish without any help, spotting and avoidi
 
 ---
 
-## 🔩 Mobility Management
-
-### Motor System Specifications
-
-Our vehicle uses a carefully selected motor system that balances power, precision, and efficiency:
-
-#### **Drive Motor**
-- **Model**: 775 DC Motor with Encoder
-- **Voltage**: 12V DC
-- **No-Load Speed**: 3000 RPM
-- **Stall Torque**: 1.5 Nm
-- **Gear Ratio**: 1:20 (Reduction gearbox)
-- **Encoder Resolution**: 11 PPR (220 PPR after gear reduction)
-- **Peak Power**: 180W
-- **Continuous Current**: 3A (Peak: 8A)
-
-#### **Steering Servo**
-- **Model**: MG996R High-Torque Servo
-- **Operating Voltage**: 4.8V - 7.2V
-- **Stall Torque**: 11 kg·cm (4.8V) / 13 kg·cm (6V)
-- **Operating Speed**: 0.17 sec/60° (4.8V) / 0.14 sec/60° (6V)
-- **Control Signal**: PWM (50Hz, 1-2ms pulse width)
-- **Rotation Range**: 180° (45° to 135° in practice for steering)
-- **Gear Type**: Metal gears for durability
-
-### Motor Selection Rationale
-
-**Why the 775 DC Motor?**
-
-We chose the 775 DC motor after careful analysis of our requirements:
-
-1. **Torque Requirements**: Using the vehicle mass (2.5 kg) and desired acceleration (1.5 m/s²):
-   ```
-   Required Torque = (Mass × Wheel Radius × Acceleration) / Gear Ratio
-   = (2.5 kg × 0.05 m × 1.5 m/s²) / 20
-   = 0.009375 Nm × 20 = 0.1875 Nm
-   
-   With 1.5 Nm stall torque and 1:20 reduction:
-   Available Torque = 1.5 × 20 = 30 Nm
-   Safety Factor = 30 / 0.1875 = 160x (Excellent margin)
-   ```
-
-2. **Speed Considerations**: 
-   ```
-   Wheel RPM = Motor RPM / Gear Ratio = 3000 / 20 = 150 RPM
-   Linear Speed = (Wheel RPM × π × Wheel Diameter) / 60
-   = (150 × 3.14159 × 0.10) / 60
-   = 0.785 m/s ≈ 2.8 km/h
-   ```
-   This speed is perfect for the competition track - fast enough to complete laps quickly, but controlled enough for precise obstacle avoidance.
-
-3. **Power Efficiency**:
-   ```
-   Operating Power = Torque × Angular Velocity
-   = 0.1875 Nm × (150 RPM × 2π / 60)
-   = 0.1875 × 15.7 = 2.94 W (typical operation)
-   
-   Efficiency = Operating Power / Input Power
-   = 2.94W / (12V × 3A) = 8.2% (typical for DC motors under light load)
-   ```
-
-**Why the MG996R Servo?**
-
-The MG996R was selected for several critical reasons:
-
-1. **Sufficient Torque**: 13 kg·cm is more than adequate for steering our lightweight vehicle
-2. **Response Time**: 0.14 sec/60° allows for quick steering adjustments during obstacle avoidance
-3. **Metal Gears**: Provides durability during competition stress and potential collisions
-4. **Standard PWM Control**: Easy integration with our CAN-based motor controller
-5. **Cost-Effective**: Balances performance with our budget constraints
-
-### Chassis Design Philosophy
-
-#### **Material Selection: PLA/PETG 3D Printing**
-
-Our chassis is completely custom-designed and 3D printed using a combination of:
-
-- **PLA (Polylactic Acid)**: For prototyping and non-stress components
-  - Density: 1.24 g/cm³
-  - Tensile Strength: 50 MPa
-  - Easy to print, biodegradable
-  
-- **PETG (Polyethylene Terephthalate Glycol)**: For structural components
-  - Density: 1.27 g/cm³
-  - Tensile Strength: 53 MPa
-  - Chemical resistant, more durable than PLA
-  - Better layer adhesion
-
-#### **Design Considerations**
-
-1. **Center of Gravity (CG)**:
-   - Battery pack: Mounted low and centered for stability
-   - Jetson Orin Nano: Positioned above rear axle
-   - RealSense camera: Forward-mounted but balanced with rear weight
-   - Total vehicle weight: ~2.5 kg
-   - CG height: ~6 cm above ground (low for stability)
-
-2. **Component Mounting Strategy**:
-   - **Jetson Enclosure (v2)**: Snap-fit design with ventilation grilles for thermal management
-   - **Camera Stand (v3)**: Height-optimized at +2.5cm for optimal field of view (98% coverage)
-   - **Motor Mounts**: Rigid mounting with vibration dampening
-   - **Battery Bays**: Designed for quick replacement during competition
-
-3. **Weight Distribution**:
-   ```
-   Front weight: ~40% (camera, front chassis, steering servo)
-   Rear weight: ~60% (Jetson, battery, drive motor, encoders)
-   
-   This rear-biased distribution provides:
-   - Better traction for rear-wheel drive
-   - Stable turning dynamics
-   - Reduced front-end understeer
-   ```
-
-4. **Structural Integrity**:
-   - All mounting points have 3mm wall thickness
-   - Stress points reinforced with ribs and fillets
-   - Tested under 100+ hours of operation
-   - Zero mechanical failures during testing
-
-### Component Integration
-
-#### **Motor Controller Integration**
-- CAN bus interface for reliable communication
-- Real-time speed control via PWM
-- Encoder feedback for closed-loop control
-- Emergency stop capability
-
-#### **Power Distribution**
-- Main battery: 12V 3S LiPo (2200mAh)
-- Buck converter: 12V → 5V for Jetson (15W)
-- Voltage regulator: 12V → 6V for servo
-- Total system power: ~47W (see Power Management section)
-
-### Assembly Process
-
-Detailed 3D assembly instructions and STEP files are available in the `/models` directory, including:
-1. Jetson Enclosure mounting (v1 & v2)
-2. RealSense Stand assembly (v1, v2, v3)
-3. Motor and encoder mounting
-4. Cable management routing
-5. Battery bay installation
-
----
 
 ## 📁 What's In Here
 

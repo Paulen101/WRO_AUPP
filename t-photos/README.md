@@ -186,6 +186,6 @@ These photos are used for:
 
 ---
 
-*Photos captured during 2024-2025 WRO Future Engineers competition season. All team members are students at the American University of Phnom Penh, Cambodia.*
+*Photos captured during 2025 WRO Future Engineers competition season. All team members are students at the American University of Phnom Penh, Cambodia.*
 
 ---
